@@ -24,7 +24,6 @@
       opacity: 1;
     }
 
-
     @layer utilities {
       .bg-primary {
         @apply bg-blue-800;
@@ -90,46 +89,46 @@
 </head>
 
 <body class="bg-gray-100 text-gray-800">
-  <!-- Navbar -->
-  <section class="fade-in">
-    <nav class="bg-white border-b border-gray-200 shadow-sm">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-10" alt="Logo" />
-          <span class="self-center text-2xl font-semibold text-gray-800">ATIS</span>
-        </a>
-        <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 font-medium text-gray-600">
-            <li><a href="#" class="hover:text-blue-700 transition-colors">Home</a></li>
-            <li><a href="#" class="hover:text-blue-700 transition-colors">Sobre</a></li>
-            <li><a href="#" class="hover:text-blue-700 transition-colors">Atividades</a></li>
-            <li><a href="#" class="hover:text-blue-700 transition-colors">Eventos</a></li>
-            <li><a href="#" class="hover:text-blue-700 transition-colors">Contato</a></li>
-          </ul>
-        </div>
+<!-- Navbar -->
+<section>
+  <nav class="bg-white border-b border-gray-200 shadow-sm fixed w-full top-0 z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-10" alt="Logo" />
+        <span class="self-center text-2xl font-semibold text-gray-800">ATIS</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 font-medium text-gray-600">
+          <li><a href="#home" class="hover:text-blue-700 transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-700 transition-colors">Sobre</a></li>
+          <li><a href="#activities" class="hover:text-blue-700 transition-colors">Atividades</a></li>
+          <li><a href="#events" class="hover:text-blue-700 transition-colors">Eventos</a></li>
+          <li><a href="#contact" class="hover:text-blue-700 transition-colors">Contato</a></li>
+        </ul>
       </div>
-    </nav>
-  </section>
+    </div>
+  </nav>
+</section>
+<br><br><br>
 
   <!-- Banner -->
-  <section class="bg-cover fade-in bg-center bg-no-repeat bg-[url('banner.jpeg')] bg-gray-700 bg-opacity-50">
+  <section id="home" class="bg-cover fade-in bg-center bg-no-repeat bg-[url('banner.jpeg')] bg-gray-700 bg-opacity-50">
     <div class="flex items-center justify-center h-80 md:h-96 lg:h-[400px]">
       <div class="text-center">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">Associação Terceira Idade</h1>
-        <p class="text-lg text-gray-200">Desde 2012, promovendo saúde, bem-estar e inclusão social para a terceira
-          idade.</p>
+        <p class="text-lg text-gray-200">Desde 2012, promovendo saúde, bem-estar e inclusão social para a terceira idade.</p>
       </div>
     </div>
   </section>
 
-  <section class="mt-12 px-4 fade-in">
+  <section id="about" class="mt-12 px-4 fade-in">
     <h2 class="text-3xl font-bold text-center mb-8 text-blue-800">Missão, Visão e Valores</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-lg mx-auto">
       <!-- Missão -->
@@ -138,8 +137,7 @@
           <i class="fas fa-bullseye text-blue-800 text-4xl"></i>
         </div>
         <h3 class="text-xl font-bold mb-2">Missão</h3>
-        <p class="text-gray-600">Promover atividades que melhorem a qualidade de vida dos idosos, preparando-os para
-          competições e criando um ambiente de inclusão e bem-estar.</p>
+        <p class="text-gray-600">Promover atividades que melhorem a qualidade de vida dos idosos, preparando-os para competições e criando um ambiente de inclusão e bem-estar.</p>
       </div>
 
       <!-- Visão -->
@@ -148,8 +146,7 @@
           <i class="fas fa-eye text-blue-800 text-4xl"></i>
         </div>
         <h3 class="text-xl font-bold mb-2">Visão</h3>
-        <p class="text-gray-600">Ser referência em eventos esportivos adaptados e atividades culturais para a terceira
-          idade, com o maior torneio de vôlei adaptado do Brasil.</p>
+        <p class="text-gray-600">Ser referência em eventos esportivos adaptados e atividades culturais para a terceira idade, com o maior torneio de vôlei adaptado do Brasil.</p>
       </div>
 
       <!-- Valores -->
@@ -158,14 +155,13 @@
           <i class="fas fa-heart text-blue-800 text-4xl"></i>
         </div>
         <h3 class="text-xl font-bold mb-2">Valores</h3>
-        <p class="text-gray-600">Respeito, dignidade, empatia, compromisso social e a promoção de atividades que gerem
-          benefícios à comunidade.</p>
+        <p class="text-gray-600">Respeito, dignidade, empatia, compromisso social e a promoção de atividades que gerem benefícios à comunidade.</p>
       </div>
     </div>
   </section>
 
   <!-- Seção Atividades -->
-  <section class="mt-12 px-4 fade-in">
+  <section id="activities" class="mt-12 px-4 fade-in">
     <h2 class="text-3xl font-bold text-center mb-8 text-blue-800">Atividades</h2>
     <div class="flex flex-col md:flex-row items-center max-w-screen-lg mx-auto space-y-8 md:space-y-0 md:space-x-8">
       <div class="w-full md:w-1/2 h-72 rounded-lg overflow-hidden shadow-md">
@@ -173,94 +169,77 @@
       </div>
       <div class="md:w-1/2">
         <h3 class="text-2xl font-bold mb-4 text-blue-700">Dança e Atividades Físicas</h3>
-        <p class="text-gray-600 leading-relaxed">Oferecemos aulas de dança, biribol, vôlei de praia 4x4 e vôlei de
-          quadra, preparando os idosos para competições. Também realizamos ginástica e atividades de alongamento.</p>
+        <p class="text-gray-600 leading-relaxed">Oferecemos aulas de dança, biribol, vôlei de praia 4x4 e vôlei de quadra, preparando os idosos para competições. Também realizamos ginástica e atividades de alongamento.</p>
       </div>
     </div>
-    <div
-      class="flex flex-col md:flex-row items-center max-w-screen-lg mx-auto mt-12 space-y-8 md:space-y-0 md:space-x-8 md:flex-row-reverse">
+    <div class="flex flex-col md:flex-row items-center max-w-screen-lg mx-auto mt-12 space-y-8 md:space-y-0 md:space-x-8 md:flex-row-reverse">
       <div class="w-full md:w-1/2 h-72 rounded-lg overflow-hidden shadow-md">
         <img src="static/img/image2.jpeg" alt="Atividade 2" class="w-full h-full object-cover">
       </div>
       <div class="md:w-1/2">
         <h3 class="text-2xl font-bold mb-4 text-blue-700">Teatro e Eventos Culturais</h3>
-        <p class="text-gray-600 leading-relaxed">Promovemos atividades teatrais, festas típicas como Halloween, festa
-          julina, aniversários do mês, e passeios culturais e esportivos, garantindo diversão e integração social.</p>
+        <p class="text-gray-600 leading-relaxed">Promovemos atividades teatrais, festas típicas como Halloween, festa julina, aniversários do mês, e passeios culturais e esportivos, garantindo diversão e integração social.</p>
       </div>
     </div>
-    <div
-      class="flex flex-col md:flex-row items-center max-w-screen-lg mx-auto mt-12 space-y-8 md:space-y-0 md:space-x-8">
+    <div class="flex flex-col md:flex-row items-center max-w-screen-lg mx-auto mt-12 space-y-8 md:space-y-0 md:space-x-8">
       <div class="w-full md:w-1/2 h-72 rounded-lg overflow-hidden shadow-md">
         <img src="static/img/image3.jpeg" alt="Atividade 3" class="w-full h-full object-cover">
       </div>
       <div class="md:w-1/2">
         <h3 class="text-2xl font-bold mb-4 text-blue-700">Jogos e Reflexões</h3>
-        <p class="text-gray-600 leading-relaxed">Realizamos jogos de mesa, debates temáticos em círculo com mediação, e
-          sessões de filmes reflexivos para promover o pensamento crítico e o convívio social.</p>
+        <p class="text-gray-600 leading-relaxed">Realizamos jogos de mesa, debates temáticos em círculo com mediação, e sessões de filmes reflexivos para promover o pensamento crítico e o convívio social.</p>
       </div>
     </div>
   </section>
 
   <!-- Seção Interpraia -->
-  <section class="mt-12 px-4 fade-in">
+  <section id="events" class="mt-12 px-4 fade-in">
     <h2 class="text-3xl font-bold text-center mb-8 text-blue-800">Interpraia: O Maior Campeonato 4x4</h2>
     <div class="max-w-screen-lg mx-auto">
       <p class="text-gray-700 text-lg leading-relaxed text-center mb-8">
-        O Interpraia é o maior campeonato de vôlei adaptado 4x4 para a terceira idade no Brasil, realizado nas areias de
-        Praia Grande.
-        Este evento incrível reúne cerca de 30 entidades e prefeituras, promovendo integração, saúde, e visibilidade
-        para o esporte na terceira idade.
+        O Interpraia é o maior campeonato de vôlei adaptado 4x4 para a terceira idade no Brasil, realizado nas areias de Praia Grande.
+        Este evento incrível reúne cerca de 30 entidades e prefeituras, promovendo integração, saúde, e visibilidade para o esporte na terceira idade.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Imagem 1 -->
         <div class="rounded-lg overflow-hidden shadow-md h-72">
-          <img src="static/img/banner-interpraia-2.jpeg" alt="Jogadores em círculo na quadra"
-            class="w-full h-full object-cover">
+          <img src="static/img/banner-interpraia-2.jpeg" alt="Jogadores em círculo na quadra" class="w-full h-full object-cover">
         </div>
         <!-- Imagem 2 -->
         <div class="rounded-lg overflow-hidden shadow-md h-72">
-          <img src="static/img/banner-interpraia.jpeg" alt="Grupo reunido nas arquibancadas"
-            class="w-full h-full object-cover">
+          <img src="static/img/banner-interpraia.jpeg" alt="Grupo reunido nas arquibancadas" class="w-full h-full object-cover">
         </div>
       </div>
     </div>
   </section>
 
-
-
   <!-- Seção Contato -->
-  <section class="mt-12 px-4 fade-in">
+  <section id="contact" class="mt-12 px-4 fade-in">
     <h2 class="text-4xl font-extrabold text-center mb-8 text-blue-800">Entre em Contato</h2>
     <div class="max-w-screen-md mx-auto text-center">
       <p class="text-gray-600 mb-8 leading-relaxed">
-        Estamos ansiosos para ouvir de você! Entre em contato para saber mais sobre nossas atividades, eventos ou
-        qualquer dúvida que possa ter.
+        Estamos ansiosos para ouvir de você! Entre em contato para saber mais sobre nossas atividades, eventos ou qualquer dúvida que possa ter.
       </p>
       <div class="flex justify-center space-x-8">
         <!-- Ícone de Email -->
-        <a href="mailto:contato@atis.org"
-          class="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110">
+        <a href="mailto:contato@atis.org" class="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110">
           <i class="fas fa-envelope fa-2x"></i>
         </a>
         <!-- Ícone de Facebook -->
-        <a href="https://www.facebook.com/atis"
-          class="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110">
+        <a href="https://www.facebook.com/atis" class="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110">
           <i class="fab fa-facebook fa-2x"></i>
         </a>
         <!-- Ícone de Instagram -->
-        <a href="https://www.instagram.com/atis"
-          class="text-gray-600 hover:text-pink-600 transition-colors transform hover:scale-110">
+        <a href="https://www.instagram.com/atis" class="text-gray-600 hover:text-pink-600 transition-colors transform hover:scale-110">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
         <!-- Ícone de WhatsApp -->
-        <a href="https://wa.me/5511999999999"
-          class="text-gray-600 hover:text-green-600 transition-colors transform hover:scale-110">
+        <a href="https://wa.me/5511999999999" class="text-gray-600 hover:text-green-600 transition-colors transform hover:scale-110">
           <i class="fab fa-whatsapp fa-2x"></i>
         </a>
       </div>
     </div>
   </section>
-
 
   <!-- Rodapé -->
   <footer class="bg-blue-800 text-white py-6 mt-12 fade-in">
@@ -295,8 +274,6 @@
     }
   </script>
 
-
-
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const fadeInElements = document.querySelectorAll(".fade-in");
@@ -318,8 +295,6 @@
       });
     });
   </script>
-
-
 
 </body>
 
